@@ -26,9 +26,7 @@ Use the provided table creation script to define the music_data structure.
 3. Load the Data from CSV
 Update the file path to match your system:
 
-sql
-Copy
-Edit
+
 LOAD DATA LOCAL INFILE 'C:/your_path/clean_file.csv'
 INTO TABLE music_data
 FIELDS TERMINATED BY ','
@@ -37,9 +35,6 @@ LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 Tip: You may need to enable local_infile in MySQL with:
 
-sql
-Copy
-Edit
 SET GLOBAL local_infile = 1;
 What This Project Includes
 Basic Queries
